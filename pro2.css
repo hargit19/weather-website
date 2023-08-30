@@ -1,0 +1,632 @@
+@font-face {
+    font-family: try;
+    src:url(IntegralCF-ExtraBold.otf);
+}
+@font-face {
+    font-family: basic;
+    src: url(RobotoSlab-Medium.ttf);
+}
+@font-face {
+    font-family: general;
+    src: url(RobotoSlab-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.nvbarr{
+    width: fit-content;
+    float: right;
+}
+nav{
+    margin-top: 1rem;
+    padding-inline: 1rem;
+    
+}
+#logo{
+    width: 5%;
+    height: 2.5rem;
+    border: none;
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.8;
+  }
+#heading{
+    display: inline;
+    font-size: 2.25rem;
+    margin-inline: 0.1rem;
+    font-family: try;
+}
+.nvbar {
+    float: right;
+    color: black;
+    text-align: center;
+margin-inline: 1rem;
+margin-block: 0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: basic
+}
+.main{
+    width: 98%;
+    margin-inline: 1%;
+    /* border: 2px solid black; */
+    height: 36rem;
+    margin-block: 1rem;
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.main-left{
+    width: 24%;
+    border: 2px solid black;
+    float: left;
+    height: 35rem;
+    margin-block: 1rem;
+    box-sizing: border-box;
+    border-radius: 3rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: black;
+}
+.main-right{
+    width: 69%;
+    /* border: 2px solid black; */
+    float: right;
+    height: 35rem;
+    margin-block: 1rem;
+    box-sizing: border-box;
+    color: black;
+}
+
+.heading{
+    height: 4.8rem;
+    /* border: 2px solid black; */
+    width: 80%;
+    /* margin-block-start: 1rem; */
+    /* margin-inline: 1rem; */
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: basic;
+   
+}
+
+.main-right-content{
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-block: 1rem;
+    margin-inline: 0;
+    height: 8.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    overflow-x: auto; 
+
+}
+.main-right-content::-webkit-scrollbar{
+   width: 0px;
+}
+    
+.future-weather{
+    height: 8rem;
+    width: 12%;
+    border: 2px solid black;
+    border-radius: 2rem;
+    font-weight: 700;
+    
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
+    font-family: general
+}
+
+.suggestion{
+    height: 4rem;
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-block: 0.5rem;
+    
+}
+#statement{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: general;
+}
+.additional-data{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 15rem;
+    display: grid;
+    grid-template-columns: repeat(3,28%);
+    /* gap: 3rem; */
+    row-gap: 1rem;
+    column-gap: 8%;
+}
+.additional-data-contant{
+    border: 2px solid black;
+    border-radius: 2rem;
+    /* background-color: rgba(1, 1, 1, 0.437); */
+    color: black;
+    font-weight: 400;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
+    /* font-family: general; */
+    
+}
+#subheading{
+    width: 80%;
+    height: 1rem;
+    border: 2px solid black;
+    font-family: general
+}
+.input{
+    width: 80%;
+    height: 3rem;
+    margin-block: 1rem;
+    border: 2px solid black;
+    margin-inline: 10%;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: black;
+}
+#search{
+    width:100%;
+    height: 1rem;
+}
+#btnn{
+    width: 15%;
+    height: 1.5rem;
+    float: left;
+    margin-block: 0.75rem;
+    margin-inline: 3%;
+    background: none;
+    border: none;
+}
+#city_input{
+    width: 75%;
+    height: 2rem;
+    float: right;
+    margin-block: 0.5rem;
+    margin-inline-end: 4%;
+    border: none;
+    font-size: 1.1rem;
+    background: none;
+    font-family: general;
+    border: none;
+  outline: none;
+}
+
+.img{
+    width: 60%;
+    /* border: 2px solid black; */
+    margin-inline: 20%;
+    height: 9rem;
+    margin-block: 2rem;
+}
+#gif_play{
+    height: 100%;
+    width: 100%;
+}
+.current_data{
+    width: 100%;
+    /* border: 2px solid black; */
+    height: 10rem;
+}
+.current-data-line1{
+    width: 90%;
+    margin-inline: 10%;
+    /* height: 3rem; */
+    /* border: 2px solid black; */
+    padding: 0;
+    font-size: 1.75rem;
+}
+#location_img{
+    float: left;
+    height: 2rem;
+    width: 20%;
+}
+.error{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: none;
+}
+#city_name{
+    width: 80%;
+    height: 2rem;
+    font-size: 1.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.current-data-line2{
+    width: 90%;
+    margin-inline: 20%;
+    margin-block: 2%;
+    /* height: 4rem; */
+    /* border: 2px solid black; */
+    font-size: 1rem;
+    font-weight: 800;
+}
+#temp{
+    font-size: 3.75rem;
+    font-weight: 800;
+}
+.current-data-line3{
+    width: 90%;
+    margin-inline: 20%;
+    height: 0rem;
+    /* border: 2px solid black; */
+    padding: 0;
+}
+.date_time{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.new{
+    font-size: 1.1rem;
+    width: 80%;
+    margin-inline: 10%;
+    text-align: left;
+    display: inline-block;
+    margin-block: 0.5rem;
+    font-family: general;
+}
+.api_data{
+    width: 80%;
+    font-size:1.8rem ;
+    text-align: center;
+    display: inline-block;
+    margin-inline: 10%;
+    font-family: general;
+
+}
+.remarks{
+    font-size: 0.75rem;
+    width: 80%;
+    margin-inline: 10%;
+    text-align: left;
+    display: inline-block;
+    margin-block: 0.5rem; 
+}
+.time-stamp{
+    width: 80%;
+    font-size: 1.3rem;
+    text-align: center;
+    display: inline-block;
+    margin-inline: 10%;
+    margin-block: 0.5rem;
+    border-bottom: 2px solid black;
+}
+.time-stamp-img{
+    width: 30%;
+    height: 2rem;
+    /* border: 2px solid black; */
+    margin-inline: 35%;
+    margin-block: 0.5rem;
+    border-radius: 0.5rem;
+}
+.time-stamp-temp{
+    width: 80%;
+    font-size: 1.1rem;
+    text-align: center;
+    display: inline-block;
+    margin-inline: 10%;
+}
+.hamburger{
+    height: 1.8rem;
+    width: 7%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    float: right;
+    /* gap: 0.rem; */
+    box-sizing: border-box;
+    margin-block: 0.75rem;
+    display: none;
+    
+    
+}
+.bar{
+height: 0.3rem;
+margin-block: 0.15rem;
+width: 100%;
+background-color: black;
+display: block;
+
+}
+/* .ham-menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-block: 1rem;
+    z-index: 999;
+}
+.ham-menu-list{
+    text-align: center;
+} */
+
+
+
+
+
+
+
+
+@media (max-width:1200px) and (min-width:1024px) {
+    .remarks{
+        font-size: 0.65rem;
+    }
+    
+ 
+}
+@media (max-width:1023px) and (min-width:768px) {
+    .nvbar{
+        font-size: 1rem;
+    }
+    #city_input{
+        font-size: 0.85rem;
+    }
+    #city_name{
+        font-size: 1.5rem;
+    }
+    #temp{
+        font-size: 2rem;
+    }
+    .main-right-content{
+        margin-block: 0;
+        padding: 0;
+    }
+    .new{
+        font-size: 0.8rem;
+    }
+    .api_data{
+        font-size: 1.6rem;
+    }
+    .suggestion{
+        margin-block: 1rem;
+    }
+}
+@media (max-width:769px) and (min-width:480px){
+    
+    #heading{
+        font-size: 2rem;
+    }
+    #logo{
+        height: 1.5rem;
+    }
+   
+    .main{
+        height: auto;
+    }
+    .main-left{
+        height: 20rem;
+        width: 85%;
+    }
+    .img{
+        margin-block: 0;
+    }
+    .current-data-line1{
+        width: 40%;
+        margin-inline: 30%;
+        /* height: 3rem; */
+        /* border: 2px solid black; */
+        padding: 0;
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    
+    
+    #city_name{
+        font-size: 1.75rem;
+    }
+    #location_img{
+        float: none;
+        height: 1.2rem;
+        width: 8%;
+    }
+    .current-data-line2{
+        width: 20%;
+        margin-inline: 40%;
+        margin-block: 2%;
+        /* height: 4rem; */
+        /* border: 2px solid black; */
+        font-size: 1rem;
+        font-weight: 800;
+        text-align: center;
+    }
+    #temp{
+        font-size: 1.75rem;
+    }
+    .main-right{
+        height: auto;
+        margin-block: 0;
+        width: 85%;
+    }
+    .heading{
+        font-size: 2.5rem;
+        height: 2.8rem;
+    }
+    .main-right-content{
+        margin-block: 1rem;
+        gap: 1rem;
+    }
+    .future-weather{
+        width: 20%;
+    }
+    .additional-data{
+        height: 18%;
+    }
+    .api_data{
+        font-size: 1.2rem;
+    }
+    .suggestion{
+        height: 5rem;
+    }
+    .nvbarr{
+        z-index: 999;
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        position: absolute;
+        top:-60%;
+        left:30%;
+        background-color: black;
+        padding-block: 3rem;
+        transition: 0.5s ease-in;
+        
+    }
+    .nvbarr a{
+        color: white;
+    }
+    .hamburger{
+        display: block;
+    }
+}  
+@media (max-width:481px) and (min-width:320px) {
+    #heading{
+        font-size: 1.5rem;
+    }
+    #logo{
+        height: 1.5rem;
+    }
+   
+    .main{
+        height: auto;
+    }
+    .main-left{
+        height: 20rem;
+        width: 85%;
+    }
+    .img{
+        margin-block: 0;
+    }
+    .current-data-line1{
+        width: 60%;
+        margin-inline: 20%;
+        /* height: 3rem; */
+        /* border: 2px solid black; */
+        padding: 0;
+        /* font-size: 1.75rem; */
+        text-align: center;
+    }
+    
+    
+    #city_name{
+        font-size: 1.5rem;
+    }
+    #location_img{
+        float: none;
+        height: 1.2rem;
+        width: 12%;
+    }
+    .current-data-line2{
+        width: 20%;
+        margin-inline: 40%;
+        margin-block: 2%;
+        /* height: 4rem; */
+        /* border: 2px solid black; */
+        font-size: 1rem;
+        font-weight: 800;
+        text-align: center;
+    }
+    #temp{
+        font-size: 1.75rem;
+    }
+    .main-right{
+        height: auto;
+        margin-block: 0;
+        width: 85%;
+    }
+    .heading{
+        font-size: 2.5rem;
+        height: 2.8rem;
+    }
+    .main-right-content{
+        margin-block: 1rem;
+        gap: 1rem;
+    }
+    .future-weather{
+        width: 26%;
+    }
+    .additional-data{
+        height: 18%;
+    }
+    .api_data{
+        font-size: 0.8rem;
+    }
+    .suggestion{
+        height: 5rem;
+    }
+    #statement{
+        font-size: 0.8rem;
+    }
+    .new{
+        font-size: 0.4rem;
+    }
+    .remarks{
+        font-size: 0.4rem;
+    }
+    .nvbarr{
+        z-index: 999;
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        position: absolute;
+        top:-100%;
+        left:20%;
+        background-color: black;
+        padding-block: 0.5rem;
+        transition: 0.5s ease-in;
+        
+        
+    }
+    .nvbarr a{
+        color: white;
+        font-size: 1rem;
+    }
+    .hamburger{
+        display: block;
+        margin-block: 0.3rem;
+
+    }
+}

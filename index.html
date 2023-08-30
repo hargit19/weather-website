@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pro2.css">
+    <!-- <script src="pro2.js"></script> -->
+
+</head>
+<body>
+    <video id="background-video" autoplay loop muted >
+        <source src="" type="video/mp4">
+        </video>
+
+<!-- <div class="ham-menu">
+    <ul class="ham-menu-list">
+        <li><a href="">APIs Used</a></li>
+        <li><a href="">About The Developer</a></li>
+    </ul>
+</div> -->
+   <nav>
+    <img src="Globe_icon_2.svg" alt="" id="logo">
+    <h1 id="heading">arctic globe</h1>
+    <div class="nvbarr">
+        <a href="http://127.0.0.1:5500/apiused.html" class="nvbar" >APIs Used</a>
+        <a href="https://www.linkedin.com/in/hardik-advani-441456250/" class="nvbar" target="_blank">About The Developer</a></div>
+        <div class="hamburger" onclick="hamdisplay()">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+   </nav>
+   
+   <div class="main">
+<div class="main-left">
+    <div class="input">
+     <button id="btnn" onclick="tryfunc()"><img src="search.svg" alt="image could not be loaded" srcset="" id="search"></button>
+      <input type="text" placeholder="enter city name" id="city_input">
+    </div>
+    <div class="error">Invalid City Name</div>
+    <div class="img">
+        
+        <img src="icons8-rain.gif" alt="" srcset="" id="gif_play">
+    </div>
+    <div class="current_data">
+        <div class="current-data-line1">
+            <img src="maps-flags_447031.png" alt="" srcset="" id="location_img">
+            <span id="city_name">mumbai</span>
+        </div>
+        <div class="current-data-line2">
+<span id="temp">22°C</span>
+        </div>
+        <div class="current-data-line3">
+            <div class="date_time" id="dayyy"></div>
+        </div>
+    </div>
+</div>
+<div class="main-right">
+<h1 class="heading">Drizzle</h1>
+<div class="main-right-content">
+    <div class="future-weather">
+        <span class="time-stamp" id="time-stamp1">03:00</span>
+        <img src="cloudy-small.png" alt="" srcset="" class="time-stamp-img" id="time-stamp-img1">
+        <span class="time-stamp-temp" id="time-stamp-temp1">28°C</span>
+    </div>
+    <div class="future-weather">
+        <span class="time-stamp" id="time-stamp2">03:00</span>
+        <img src="cloudy-small.png" alt="" srcset="" class="time-stamp-img" id="time-stamp-img2">
+        <span class="time-stamp-temp" id="time-stamp-temp2">28°C</span>
+    </div>
+    <div class="future-weather">
+        <span class="time-stamp" id="time-stamp3">03:00</span>
+        <img src="cloudy-small.png" alt="" srcset="" class="time-stamp-img" id="time-stamp-img3">
+        <span class="time-stamp-temp" id="time-stamp-temp3">28°C</span>
+    </div>
+    <div class="future-weather">
+        <span class="time-stamp" id="time-stamp4">03:00</span>
+        <img src="cloudy-small.png" alt="" srcset="" class="time-stamp-img" id="time-stamp-img4">
+        <span class="time-stamp-temp" id="time-stamp-temp4">28°C</span>
+    </div>
+    <div class="future-weather">
+        <span class="time-stamp" id="time-stamp5">03:00</span>
+        <img src="cloudy-small.png" alt="" srcset="" class="time-stamp-img" id="time-stamp-img5">
+        <span class="time-stamp-temp" id="time-stamp-temp5">28°C</span>
+    </div>
+    <div class="future-weather">
+        <span class="time-stamp" id="time-stamp6">03:00</span>
+        <img src="cloudy-small.png" alt="" srcset="" class="time-stamp-img" id="time-stamp-img6">
+        <span class="time-stamp-temp" id="time-stamp-temp6">28°C</span>
+    </div>
+    <div class="future-weather">
+        <span class="time-stamp" id="time-stamp7">03:00</span>
+        <img src="cloudy-small.png" alt="" srcset="" class="time-stamp-img" id="time-stamp-img7">
+        <span class="time-stamp-temp" id="time-stamp-temp7">28°C</span>
+    </div>
+    <div class="future-weather">
+        <span class="time-stamp" id="time-stamp8">03:00</span>
+        <img src="cloudy-small.png" alt="" srcset="" class="time-stamp-img" id="time-stamp-img8">
+        <span class="time-stamp-temp" id="time-stamp-temp8">28°C</span>
+    </div>
+    <div class="future-weather">
+        <span class="time-stamp" id="time-stamp9">03:00</span>
+        <img src="cloudy-small.png" alt="" srcset="" class="time-stamp-img" id="time-stamp-img9">
+        <span class="time-stamp-temp" id="time-stamp-temp9">28°C</span>
+    </div>
+    <div class="future-weather">
+        <span class="time-stamp" id="time-stamp10">03:00</span>
+        <img src="cloudy-small.png" alt="" srcset="" class="time-stamp-img" id="time-stamp-img10">
+        <span class="time-stamp-temp" id="time-stamp-temp10">28°C</span>
+    </div>
+    <div class="future-weather">
+        <span class="time-stamp" id="time-stamp11">03:00</span>
+        <img src="cloudy-small.png" alt="" srcset="" class="time-stamp-img" id="time-stamp-img11">
+        <span class="time-stamp-temp" id="time-stamp-temp11">28°C</span>
+    </div>
+    <div class="future-weather">
+        <span class="time-stamp" id="time-stamp12">03:00</span>
+        <img src="cloudy-small.png" alt="" srcset="" class="time-stamp-img" id="time-stamp-img12">
+        <span class="time-stamp-temp" id="time-stamp-temp12">28°C</span>
+    </div>
+    
+</div>
+<div class="suggestion">
+    <p id="statement">It's Raining heavily outside. Try Preferring staying at your home. Dont't forget to take an umbrella while going out !!</p>
+</div>
+<div class="additional-data">
+    <div class="additional-data-contant">
+        <span class="new"> Air Quality Index</span>
+        <span class="api_data" id="aqi">2</span>
+        <span class="remarks">Remarks : <span id="comment">Fair</span></span>
+    </div>
+    <div class="additional-data-contant">
+        <span class="new"> Pressure</span>
+        <span class="api_data" id="pressure">800 Pa</span><span class="remarks">Remarks : Fair</span>
+    </div>
+    <div class="additional-data-contant">
+        <span class="new"> Humidity</span>
+        <span class="api_data" id="humidity">60%</span><span class="remarks"></span>
+    </div>
+    <div class="additional-data-contant">
+        <span class="new" > Feels Like</span>
+        <span class="api_data" id="feels_like">28°C</span><span class="remarks">Humidity,Radiant Heat,Heat Index</span>
+    </div>
+    <div class="additional-data-contant">
+        <span class="new"> Wind Speed</span>
+        <span class="api_data" id="wind_speed">5.77 Km/hr</span><span class="remarks"></span>
+    </div>
+    <div class="additional-data-contant">
+        <span class="new"> Visibility</span>
+        <span class="api_data" id="visibility">5 Km</span><span class="remarks"></span>
+    </div>
+    
+    
+</div>
+</div>
+</div>
+</div>
+<script src="pro2.js"></script>
+</body>
+</html>

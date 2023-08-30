@@ -1,0 +1,79 @@
+@font-face {
+    font-family: try;
+    src:url(IntegralCF-ExtraBold.otf);
+}
+@font-face {
+    font-family: general;
+    src: url(RobotoSlab-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: basic;
+    src: url(RobotoSlab-Medium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 1;
+  }
+#heading{
+    font-size: 2rem;
+}
+#nvbar{
+    display: flex;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    box-sizing: border-box;
+    color: white;
+    font-family: try
+
+}
+#back_to_site{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+}
+#back{
+    display: flex;
+    gap: 0rem;
+}
+#return-icon{
+    /* border: 2px solid black; */
+    width: 63%;
+}
+#main-content{
+    box-sizing: border-box;
+    padding-inline: 3rem;
+    padding-block: 1rem;
+    color: white;
+}
+.add-content{
+    margin-inline: 2rem;
+    color: white;
+    font-family: general;
+    text-transform: capitalize;
+}
+.main-class-items{
+    margin-block: 1rem;
+    color: white;
+    font-family: basic;
+    text-transform: capitalize;
+}
+.main-class-items a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: white;
+}
