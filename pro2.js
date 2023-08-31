@@ -106,7 +106,7 @@ async function current_temp(city){
     if(live_data.weather[0].main == "Thunderstorm"){
         document.getElementById("statement").innerHTML = "Make sure to stay indoors if possible, and if you absolutely must go out, remember to stay away from open fields, tall objects, and water bodies. Safety first!"
         document.getElementById("gif_play").src  = "thunder-neww.svg"
-        document.getElementById("background-video").src = "thunder-back.mp4"
+        document.getElementById("background-video").src = "thunder-back-new.mp4"
     }
     if(live_data.weather[0].main == "Haze"){
         document.getElementById("statement").innerHTML = "Hazy conditions can sometimes affect air quality, so, consider wearing a mask. Stay hydrated and enjoy the day while keeping comfort and safety in mind! "
