@@ -94,7 +94,7 @@ async function current_temp(city){
     if(live_data.weather[0].main == "Drizzle"){
         document.getElementById("statement").innerHTML = "Hey Friend, it's a drizzly day out there! Don't forget your umbrella or a waterproof jacket.Embrace the subtle beauty of the rain and have a wonderful time wherever you're headed!"
         document.getElementById("gif_play").src  = "drizzle-neww.svg"
-        document.getElementById("background-video").src = "drizzle-compressed.mp4"
+        document.getElementById("background-video").src = "drizzle-back-new.mp4"
 
     }
     if(live_data.weather[0].main == "Mist"){
