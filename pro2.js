@@ -89,7 +89,7 @@ async function current_temp(city){
     if(live_data.weather[0].main == "Rain"){
         document.getElementById("statement").innerHTML = "Hey Friend, don't forget your umbrella and a cheerful spirit! Rainy days have their own charm, and I hope you enjoy the refreshing feeling and the sound of raindrops !"
         document.getElementById("gif_play").src  = "rainy-neww.svg";
-        document.getElementById("background-video").src = "rain-compressed.mp4"
+        document.getElementById("background-video").src = "rain-back-new.mp4"
     }
     if(live_data.weather[0].main == "Drizzle"){
         document.getElementById("statement").innerHTML = "Hey Friend, it's a drizzly day out there! Don't forget your umbrella or a waterproof jacket.Embrace the subtle beauty of the rain and have a wonderful time wherever you're headed!"
