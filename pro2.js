@@ -115,7 +115,7 @@ async function current_temp(city){
     }
     if(live_data.weather[0].main == "Smoke"){
         document.getElementById("statement").innerHTML = "Hey Friend, if there's smoky weather outside, it's essential to prioritize your health and safety. Your well-being comes first, so please take care and stay informed about the conditions"
-        document.getElementById("background-video").src = "haze-back.mp4"
+        document.getElementById("background-video").src = "smoke-back-new.mp4"
         document.getElementById("gif_play").src  = "haze-compressed.mp4"
     }
 
