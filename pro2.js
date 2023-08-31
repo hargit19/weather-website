@@ -78,7 +78,7 @@ async function current_temp(city){
     if(live_data.weather[0].main == "Clear"){
         document.getElementById("statement").innerHTML = "Hey Friend, enjoy the clear skies and crisp air!.  It's a perfect day to seize the moment and bask in the beauty of nature. Have a fantastic time out there!";
         document.getElementById("gif_play").src  = "day-neww.svg"
-        document.getElementById("background-video").src = "clear-compressed2.mp4"
+        document.getElementById("background-video").src = "clear-back-new.mp4"
         
     }
     if(live_data.weather[0].main == "Clouds"){
