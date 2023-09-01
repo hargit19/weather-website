@@ -123,7 +123,7 @@ async function current_temp(city){
 }
 
 async function getcoordinates(city){
-    var lat_lon = await fetch io(apiurl3  +city + `&appid=${apikey3}`)
+    var lat_lon = await fetch (apiurl3  +city + `&appid=${apikey3}`)
     var data_lat_lon = await lat_lon.json()
     let lat = data_lat_lon[0].lat;
     let lon = data_lat_lon[0].lon;
